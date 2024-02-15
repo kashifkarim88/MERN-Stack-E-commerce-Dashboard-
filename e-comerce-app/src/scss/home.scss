@@ -1,0 +1,20 @@
+@import "./variables";
+
+.home_wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 75dvh;
+    .home-tag{
+        font-size: 100px;
+    }
+    .home-tag-1{
+        font-size: 140px;
+        border-bottom: 20px solid black;
+        background: $gradiend_color;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

@@ -1,0 +1,29 @@
+@import "./variables";
+
+@mixin flex-mixin(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @content;
+}
+.update-wrapper{
+    @include flex-mixin();
+    .update-inner{
+        @include flex-mixin(){
+            gap: 10px;
+            .edit-prodcuts-input{
+                width: $inputFiled-width;
+                padding: $inputField-padding;
+            }
+            .edit-btn{
+                @extend .edit-prodcuts-input;
+                border: transparent;
+                outline: transparent;
+                background-color: rgba(126,0,134,1);
+                color: $white_text_color;
+                font-weight: 600;
+            }
+        }
+    }
+}

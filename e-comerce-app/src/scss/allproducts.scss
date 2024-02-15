@@ -1,0 +1,35 @@
+@import "./variables";
+
+.all-products-inner {
+    display: flex;
+    gap: 10px;
+    padding: 10px 10dvw;
+}
+
+.all-products-wrapper {
+    .search_product_div {
+        margin: 0 10dvw;
+        display: flex;
+        align-items: flex-start;
+        .search_prodct_inner {
+            display: flex;
+            position: relative;
+            display: inline-block;
+
+            .search_product {
+                width: $inputFiled-width;
+                padding: $inputField-padding;
+                outline: transparent;
+                border: transparent;
+                border-bottom: 1px solid $gray-border;
+            }
+
+            .close_icon {
+                position: absolute;
+                top: 30%;
+                right: 2px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,43 @@
+@import "variables";
+.login-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70dvh;
+}
+h2{
+    background: $gradiend_color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.login-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    input{
+        padding: $inputField-padding;
+        width: $inputFiled-width;
+        transition: 0.2s ease-in-out;
+    }
+    input:focus{
+        border: transparent;
+        padding: 13px;
+    }
+
+    .login-btn{
+        padding: 10px 50px;
+        border: transparent;
+        outline: transparent;
+        background: $black_text_color;
+        color: $white_text_color;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .signup-p{
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,17 @@
+@import "variables";
+.footer-wrapper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(128, 128, 128, 0.377);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10dvw;
+    .footer-user-name{
+        height: 100%;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}

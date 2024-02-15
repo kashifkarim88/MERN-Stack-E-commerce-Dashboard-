@@ -1,0 +1,35 @@
+@import "variables";
+@mixin flex-column(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @content;
+}
+.signup-wrapper{
+    @include flex-column();
+    .signup-inner{
+        @include flex-column(){
+            gap: 10px;
+        }
+    }
+    h2{
+        background: $gradiend_color;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    input{
+        width: $inputFiled-width;
+        padding: $inputField-padding;
+    }
+    .Signup-btn{
+        padding: 10px 50px;
+        margin-top: 10px;
+        background-color: $black_text_color;
+        color: $white_text_color;
+        font-weight: 600;
+        outline: transparent;
+        border: transparent;
+    }
+}

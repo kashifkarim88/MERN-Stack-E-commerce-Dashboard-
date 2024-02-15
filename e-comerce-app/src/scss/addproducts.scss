@@ -1,0 +1,30 @@
+@import "./variables.scss";
+.add-products-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10px 0;
+    .add-products-inner{
+        @extend .add-products-wrapper;;
+        width: 50dvw;
+        gap: 10px;
+    }
+    .add-prodcuts-input{
+        width: $inputFiled-width;
+        padding: $inputField-padding;
+    }
+    .add-prodcuts-input:focus{
+        outline: 2px solid rgba(126,0,134,1);
+        border: transparent;
+    }
+    .add-product-btn{
+        width: 322px;
+        padding: $inputField-padding;
+        border: transparent;
+        outline: transparent;
+        background:rgba(126,0,134,1);
+        color: $white_text_color;
+        font-weight: 600;
+    }
+}
